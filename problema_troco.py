@@ -16,6 +16,7 @@ quantidade de moedas para este troco;
   * O exercício pode ser feito em grupos de um, dois ou três elementos.
 """
 
+
 def main():
     # Example 1
     coins = [100, 25, 10, 5, 1]
@@ -44,6 +45,7 @@ def main():
     result = get_change(coins, value)
     print(f"Change for {value} cents: {result}")
     print(f"Total coins used: {len(result)}")
+
 
 def get_change(coins, value):
     original_value = value
@@ -84,6 +86,7 @@ def get_change(coins, value):
     print(f"Result (2): {result}")
     return result
 
+
 def insertion_sort(arr, reverse=False):
     iterations = 0
     for i in range(1, len(arr)):
@@ -95,6 +98,7 @@ def insertion_sort(arr, reverse=False):
             iterations += 1
         arr[j + 1] = key
     return arr, iterations
-    
+
+
 if __name__ == "__main__":
     main()
